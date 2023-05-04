@@ -6,7 +6,7 @@
 #    By: vpoirot <vpoirot@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/12 10:11:10 by vpoirot           #+#    #+#              #
-#    Updated: 2023/04/28 12:19:27 by vpoirot          ###   ########.fr        #
+#    Updated: 2023/05/04 12:47:51 by vpoirot          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,7 +35,7 @@ $(NAME): ${OBJ}
 	@${MAKE} -C ./ft_printf
 	@cp ft_printf/libftprintf.a ${NAME}
 	@ar rc ${NAME} ${OBJ}
-	@${CC} ${SRC} ${FT_PRINTF} MLX42/build/libmlx42.a -Iinclude -lglfw -L "/Users/$$USER/.brew/opt/glfw/lib/" -o so_long
+	@${CC} ${SRC} ${FT_PRINTF} MLX42/build/libmlx42.a -Iinclude -lglfw -L "/Users/$$USER/.brew/opt/glfw/lib/" -o monkey_run.exe
 	@printf "\x1b[32mFinish !\n"
 
 clean:
@@ -45,7 +45,7 @@ clean:
 fclean: clean
 	@${MAKE} fclean -C ./ft_printf
 	@rm -f ${NAME}
-	@rm -f so_long
+	@rm -f monkey_run.exe
 	@printf "\x1b[31mDelete files !\n"
 
 re: fclean all
