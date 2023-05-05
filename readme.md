@@ -15,7 +15,7 @@ Current...
 ## Leaderboard :
 <br>
 
-> <span style="color: red"> #1 J... → 57s </span>
+> <span style="color: red"> #1 J... → 51s </span>
 
 <br>
 
@@ -23,4 +23,4 @@ Current...
 
 <br>
 
-> <span style="color: yellow"> #3 R... → 1m13s </span>
+> <span style="color: yellow"> #3 Walana → 1m13s </span>
