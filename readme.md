@@ -15,7 +15,7 @@ Current...
 ## Leaderboard :
 <br>
 
-> <span style="color: red"> #1 J... → 51s </span>
+> <span style="color: red"> #1 JaiFaim → 51s </span>
 
 <br>
 
