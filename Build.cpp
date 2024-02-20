@@ -6,10 +6,22 @@ Build::Build(void) {
         deck1[i] = 0;
         deck2[i] = 0;
     }
+    stepD1 = 26;
+    stepD2 = 26;
 }
 
 Build::~Build(void) {
     std::cout << "End of program..." << std::endl;
+}
+
+void    Build::cardUp(int isd1ord2) {
+    int i = -1;
+    if (isd1ord2 == 1)
+        while (++i < stepD1)
+            deck1[i] = deck1[i + 1];
+    else if (isd1ord2 == 2)
+        while (++i < stepD2)
+            deck2[i] = deck2[i + 1];
 }
 
 bool Build::setValueInDeck(void) {
@@ -36,6 +48,25 @@ bool Build::setValueInDeck(void) {
     return (true);
 }
 
-void    Build::setCard(int card1, int card2, int isd1ord2) {
-    ;
+void    Build::setCard(int card1, int card2, int dest) {
+    if (dest == 1) {
+        deck1[stepD1] = card1;
+        stepD1++;
+        deck1[stepD1] = card2;
+        stepD1++;
+        cardUp(1);
+        stepD1--;
+        cardUp(2);
+        stepD2--;
+    }
+    if (dest == 2) {
+        deck2[stepD2] = card1;
+        stepD2++;
+        deck2[stepD2] = card2;
+        stepD2++;
+        cardUp(1);
+        stepD2--;
+        cardUp(2);
+        stepD1--;
+    }
 }

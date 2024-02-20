@@ -11,11 +11,15 @@
             int deck1[52];
             int deck2[52];
 
+            int stepD1;
+            int stepD2;
+
             Build(void);
             ~Build(void);
 
+            void cardUp(int isd1ord2);
             bool setValueInDeck(void);
-            void setCard(int card1, int card2, int isd1ord2);
+            void setCard(int card1, int card2, int dest);
     };
 
     class Game {
@@ -23,6 +27,7 @@
             // Stat :
             int winner;
             int countRound;
+            int countDuel;
             int countBattle;
 
             // Game Action :
