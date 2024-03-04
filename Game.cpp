@@ -13,9 +13,9 @@ Game::~Game(void) {
 
 void    Game::duel(t_data *data) {
     countDuel++;
-    if (data->bld.deck1[0] > data->bld.deck2[0])
+    if (data->bld.deck1[0] < data->bld.deck2[0])
         data->bld.setCard(data->bld.deck1[0], data->bld.deck2[0], 1);
-    else if (data->bld.deck1[0] < data->bld.deck2[0])
+    else if (data->bld.deck1[0] > data->bld.deck2[0])
         data->bld.setCard(data->bld.deck2[0], data->bld.deck1[0], 2);
     else
         /*battle*/;
@@ -23,4 +23,5 @@ void    Game::duel(t_data *data) {
 
 void    Game::battle(t_data *data) {
     countBattle++;
+    
 }

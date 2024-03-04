@@ -10,6 +10,8 @@
         public :
             int deck1[52];
             int deck2[52];
+            int curentStack1[52];
+            int curentStack2[52];
 
             int stepD1;
             int stepD2;
@@ -17,9 +19,10 @@
             Build(void);
             ~Build(void);
 
-            void cardUp(int isd1ord2);
+            void cardUp(void);
             bool setValueInDeck(void);
             void setCard(int card1, int card2, int dest);
+            void finishCurentDuel(int isd1ord2);
     };
 
     class Game {
