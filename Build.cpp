@@ -8,6 +8,8 @@ Build::Build(void) {
     }
     stepD1 = 26;
     stepD2 = 26;
+    stepS1 = 0;
+    stepS2 = 0;
 }
 
 Build::~Build(void) {

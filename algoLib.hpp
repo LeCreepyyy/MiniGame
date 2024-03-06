@@ -15,6 +15,8 @@
 
             int stepD1;
             int stepD2;
+            int stepS1;
+            int stepS2;
 
             Build(void);
             ~Build(void);
@@ -32,6 +34,7 @@
             int countRound;
             int countDuel;
             int countBattle;
+            int stepCurentDuel;
 
             // Game Action :
             void    duel(t_data *data);
@@ -44,6 +47,7 @@
 
     typedef struct data {
         Build bld;
+        Game game;
     }   t_data;
 
 #endif
