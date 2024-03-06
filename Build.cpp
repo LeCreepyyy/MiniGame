@@ -59,19 +59,6 @@ void    Build::cardUp(void) {
  * @param card2 deuxieme carte a etre placer dans le deck (carte gagnante)
  * @param dest dans quel deck les cartes vont
 */
-void    Build::setCard(int card1, int card2, int dest) {
-    if (dest == 1) {
-        stepD1++;
-        deck1[stepD1] = card1;
-        stepD1++;
-        deck1[stepD1] = card2;
-        cardUp();
-    }
-    if (dest == 2) {
-        stepD2++;
-        deck2[stepD2] = card1;
-        stepD2++;
-        deck2[stepD2] = card2;
-        cardUp();
-    }
+void    Build::setCard(t_data *data) {
+    ;
 }

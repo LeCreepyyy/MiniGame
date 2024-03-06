@@ -23,7 +23,7 @@
 
             void cardUp(void);
             bool setValueInDeck(void);
-            void setCard(int card1, int card2, int dest);
+            void setCard(t_data *data);
             void finishCurentDuel(int isd1ord2);
     };
 
