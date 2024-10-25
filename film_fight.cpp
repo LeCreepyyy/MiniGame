@@ -33,6 +33,8 @@ void fight(std::string choice, std::vector<std::string> list) {
     std::cout << "Choice is " << choice << " :" << std::endl;
     std::cout << std::endl;
     for (std::vector<std::string>::iterator it = list.begin(); it != list.end(); it++) {
+        if (*it == choice)
+            continue;
         std::string answer;
         std::cout << choice << " vs " << *it << "      (tap no) : ";
         std::getline(std::cin, answer);
