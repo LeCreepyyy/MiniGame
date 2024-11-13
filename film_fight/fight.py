@@ -74,6 +74,9 @@ def game():
     database = read_db("database")
     random.shuffle(database)
     choice = database[0]
+    random.shuffle(database)
+    display_film(choice, 500)
+
     
 
 film_left_x = 300
